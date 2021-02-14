@@ -62,7 +62,6 @@ def runner
   welcome 
   card_total = initial_round
   hit?(card_total)
-  binding.pry
-  puts "why are we here"
+  display_card_total
 end
     
