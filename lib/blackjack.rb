@@ -54,10 +54,6 @@ def invalid_command
   puts "Please enter a valid command"
 end
 
-def end_game
-  puts "The game is over"
-end 
-
 #####################################################
 # get every test to pass before coding runner below #
 #####################################################
