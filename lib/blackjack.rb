@@ -60,8 +60,8 @@ end
 
 def runner
   welcome 
-  initial_round
-  hit?
+  card_total=initial_round
+  hit?(card_total)
   
 end
     
