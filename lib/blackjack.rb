@@ -33,7 +33,9 @@ def initial_round
 end
 
 def hit? (card_total)
- 
+
+  input = nil 
+  while input != 'h' && input !='s'
     prompt_user
     input = get_user_input
 
@@ -44,6 +46,7 @@ def hit? (card_total)
     else
       invalid_command
     end
+  end
   card_total
 end
 
