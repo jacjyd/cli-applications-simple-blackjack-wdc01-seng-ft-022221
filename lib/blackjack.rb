@@ -54,6 +54,10 @@ def invalid_command
   puts "Please enter a valid command"
 end
 
+def end_game
+  puts "The game is over"
+end 
+
 #####################################################
 # get every test to pass before coding runner below #
 #####################################################
@@ -61,7 +65,9 @@ end
 def runner
   welcome 
   card_total = initial_round
-  hit?(card_total)
-  display_card_total
+  until card_total >21 do
+      hit?(card_total)
+  end
+  end_game
 end
     
